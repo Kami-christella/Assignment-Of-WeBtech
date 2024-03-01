@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Student Documents</title>
+</head>
+<body>
+
+    <h2>Upload Student Documents</h2>
+
+    <form action="upload" method="post" enctype="multipart/form-data">
+    
+         <label for="email">Email</label>
+         <input type="email" placeholder="Your Email" name="email">
+         <br><br>
+       
+        <label for="picture">Upload Passport Picture</label>
+        <input type="file" id="passportPicture" name="picture" accept=".jpg, .jpeg, .png" required>
+        
+        <br><br>
+
+      
+        <label for="document">Upload Diploma Certificate</label>
+        <input type="file" id="diplomaCertificate" name="document" accept=".pdf" required>
+        
+
+        <br><br>
+
+        <input type="submit" value="Save"/>
+    </form>
+
+</body>
+</html>
